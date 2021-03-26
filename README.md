@@ -8,7 +8,7 @@ Ce projet aura lieu à une présentation orale dans l'optique de l'obtention du 
 - MySQL 5.7.19
 - PHP 7.1.9
 - HTML / JS / CSS
-- Versionning : GitHub
+- Versioning : GitHub
 
 # Développeurs :
 - Martin Blondel
