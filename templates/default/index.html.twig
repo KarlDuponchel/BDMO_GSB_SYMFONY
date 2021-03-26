@@ -1,13 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
+{% block title %}Liste des médicaments{% endblock %}
 
 {% block body %}
-
-    <h2>Liste des médicaments</h2>
-
+<style>
+{% include 'css/index.css' %}
+</style>
+  <div class="TitreContenu">
+    <p class="Titre">Liste des médicaments</p>
+  </div>
     {% for medicament in medicaments %}
-        <ul><li>{{ medicament.medNomcommercial }}</li></ul>
+    <br>
+    <br>
+    <div class="Medicament">
+        <div class="MedicamentGauche"><br>
+        {{ medicament.medNomcommercial }}
+        </div>
+        <div class="">
+
+        </div>
+      </div>
 
     {% endfor %}
 {% endblock %}

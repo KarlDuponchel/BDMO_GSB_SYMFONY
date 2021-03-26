@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+  margin:0px;padding:0px;
+  font-family: Arial;
+}
+  .GrandBandeauHaut {
+    height: 100px; width: auto; background: #123e6a;
+    border: 3px solid #bdbdbd;
+  }
+  .BandeauImg {
+    height: 100px; width: 161px; background: white;float: left;
+    border-right: 3px solid #bdbdbd;
+  }
+  .TitreBandeauHaut {
+    height: 100px; width: 1480px;
+  }
+  .LblBienvenue {
+    color: white; font-size: 35px; text-align: center;
+  }
+  .Gauche {
+    background-color: #66a3d3; width: 161px;height: 2100px;float: left;
+    border: 3px solid #bdbdbd;
+    border-top: 1px solid #bdbdbd;
+  }
+  .Droite {
+    margin-left: 165px;
+  }
+
+  .BtnDeconnexion {
+  text-decoration: none;
+  padding: 11px;
+  font-family: arial;
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: #66a3d3;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border: 4px solid #bdbdbd;
+  box-shadow: 3px 3px 4px #444444;
+  -webkit-box-shadow: 3px 3px 12px #444444;
+  -moz-box-shadow: 3px 3px 12px #444444;
+  float: right;
+  }
+
+
+  .BtnDeconnexion:hover {
+  background-color: 66a3d3;
+  border: 4px solid #FFFFFF;
+  box-shadow: 3px 3px 4px #777777;
+  -webkit-box-shadow: 1px 1px 4px #777777;
+  -moz-box-shadow: 1px 1px 4px #777777;
+  }

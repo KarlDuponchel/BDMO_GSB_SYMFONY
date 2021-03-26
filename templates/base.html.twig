@@ -3,10 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+            <link rel="stylesheet" href="base.css">
         {% endblock %}
 
         {% block javascripts %}
@@ -14,6 +12,28 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+      <style>
+        {% include 'css/base.css' %}
+      </style>
+        <div class="GrandBandeauHaut">
+          <div class="BandeauImg">
+            <img src="C:\wamp64\www\BDMO_GSB_SYMFONY\public\img\gsb.png" alt="logo">
+          </div>
+          <div class="TitreBandeauHaut">
+            <p class="LblBienvenue">Bienvenue Mr XXXXXXXX
+            <button class="BtnDeconnexion"type="button" name="deconnexion">Déconnexion</button></p>
+          </div>
+        </div>
+        <div class="Conteneur">
+            <div class="Gauche">
+
+            </div>
+            <div class="Droite">
+              {% block body %}
+
+              {% endblock %}
+            </div>
+        </div>
+
     </body>
 </html>

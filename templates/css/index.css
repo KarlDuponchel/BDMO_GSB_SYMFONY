@@ -1,0 +1,31 @@
+.TitreContenu {
+  height: 35px;
+  border: 3px solid #bdbdbd;
+  border-top: 1px solid #bdbdbd;
+
+}
+
+.Medicament {
+  height: 50px;
+  width: 900px;
+  border: 3px solid #bdbdbd;
+  margin-left: 220px;
+}
+
+.MedicamentGauche {
+  width: 200px;
+  height: 49px;
+  background-color: #66a3d3;
+  border-right: 3px solid #bdbdbd;
+  border-top: 1px solid #bdbdbd;
+  border-left: 2px solid #bdbdbd;
+  border-bottom: 3px solid #bdbdbd;
+  text-align: center;
+}
+
+.Titre {
+    font-family: Arial;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
