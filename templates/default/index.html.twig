@@ -13,13 +13,16 @@
     <br>
     <br>
     <div class="Medicament">
-        <div class="MedicamentGauche"><br>
-        {{ medicament.medNomcommercial }}
-        </div>
-        <div class="">
-
-        </div>
-      </div>
+        <button class="BtnMedoc">
+            <div class="MedicamentGauche"><br>
+            {{ medicament.medNomcommercial }}
+            </div>
+            <div class="MedicamentDroit">
+                <br/>
+                <!--<u><b>Dépot légal</b></u> :--> {{ medicament.medDepotlegal }} / <!--<u><b>Composition</b></u> : -->{{ medicament.medComposition }} /<!-- <u><b>Quantité</b></u> :--> {{ medicament.medQuantite }}
+            </div>
+        </button>
+    </div>
 
     {% endfor %}
 {% endblock %}

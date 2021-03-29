@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Utilisateur;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,6 +19,16 @@ class DefaultController extends AbstractController
 
         return $this->render('default/index.html.twig', [
             'medicaments' => $medicament
+        ]);
+    }
+
+        //A FINIR
+    public function Utilisateur(): Response
+    {
+        $Util = $this->getDoctrine()->getRepository(Utilisateur::class)->find(1);
+
+        return $this->render('default/index.html.twig', [
+            'util'=>$Util
         ]);
     }
 }

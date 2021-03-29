@@ -22,6 +22,14 @@ class Medicament
     private $medDepotlegal;
 
     /**
+     * @return string
+     */
+    public function getMedDepotlegal(): string
+    {
+        return $this->medDepotlegal;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="MED_NOMCOMMERCIAL", type="string", length=50, nullable=true)
@@ -58,6 +66,14 @@ class Medicament
     private $medComposition;
 
     /**
+     * @return string|null
+     */
+    public function getMedComposition(): ?string
+    {
+        return $this->medComposition;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="MED_CONTREINDIC", type="string", length=255, nullable=true)
@@ -70,6 +86,14 @@ class Medicament
      * @ORM\Column(name="MED_QUANTITE", type="string", length=10, nullable=true)
      */
     private $medQuantite;
+
+    /**
+     * @return string|null
+     */
+    public function getMedQuantite(): ?string
+    {
+        return $this->medQuantite;
+    }
 
     /**
      * @var \FamilleMedicament

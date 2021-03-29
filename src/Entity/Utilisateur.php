@@ -29,11 +29,35 @@ class Utilisateur
     private $utiNom;
 
     /**
+     * @return string|null
+     */
+    public function getUtiNom(): ?string
+    {
+        return $this->utiNom;
+    }
+
+    /**
+     * @return int
+     */
+    public function getUtiId(): int
+    {
+        return $this->utiId;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="UTI_PRENOM", type="string", length=38, nullable=true)
      */
     private $utiPrenom;
+
+    /**
+     * @return string|null
+     */
+    public function getUtiPrenom(): ?string
+    {
+        return $this->utiPrenom;
+    }
 
     /**
      * @var string|null
