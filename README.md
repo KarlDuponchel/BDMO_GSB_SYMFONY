@@ -12,6 +12,6 @@ Ce projet aura lieu à une présentation orale dans l'optique de l'obtention du 
 
 # Développeurs :
 - Martin Blondel
-- Icham Ouelaa
-- Karl Duponchel
-- Adrien Manfredi
+- Icham Ouelaa [PORTFOLIO](https://ichamouelaa2.wixsite.com/monportfolio)
+- Karl Duponchel [PORTFOLIO](https://karldup76.wixsite.com/accueil)
+- Adrien Manfredi [PORTFOLIO](https://adrmanfredi.wixsite.com/portfolio)
