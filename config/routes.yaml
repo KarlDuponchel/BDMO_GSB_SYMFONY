@@ -1,3 +1,7 @@
-index:
+deconnexion:
     path: /
+    controller: App\Controller\DefaultController::deconnexion
+
+index:
+    path: /index
     controller: App\Controller\DefaultController::index

@@ -22,13 +22,8 @@ class DefaultController extends AbstractController
         ]);
     }
 
-        //A FINIR
-    public function Utilisateur(): Response
+    public function deconnexion()
     {
-        $Util = $this->getDoctrine()->getRepository(Utilisateur::class)->find(1);
-
-        return $this->render('default/index.html.twig', [
-            'util'=>$Util
-        ]);
+      return $this->render('connexion.html.twig');
     }
 }
