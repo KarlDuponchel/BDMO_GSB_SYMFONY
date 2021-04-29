@@ -52,11 +52,27 @@ class Medicament
     private $medPrix;
 
     /**
+     * @return string|null
+     */
+    public function getMedPrix(): ?string
+    {
+        return $this->medPrix;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="MED_EFFETS", type="string", length=255, nullable=true)
      */
     private $medEffets;
+
+    /**
+     * @return string|null
+     */
+    public function getMedEffets(): ?string
+    {
+        return $this->medEffets;
+    }
 
     /**
      * @var string|null
@@ -79,6 +95,13 @@ class Medicament
      * @ORM\Column(name="MED_CONTREINDIC", type="string", length=255, nullable=true)
      */
     private $medContreindic;
+    /**
+     * @return string|null
+     */
+    public function getMedContreindic(): ?string
+    {
+        return $this->medContreindic;
+    }
 
     /**
      * @var string|null

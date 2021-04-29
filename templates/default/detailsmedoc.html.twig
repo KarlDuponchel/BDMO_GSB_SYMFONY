@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détails du médicament{% endblock %}
+
+{% block body %}
+  <style>
+    {% include 'css/index.css' %}
+  </style>
+
+  <div class="blocdetails"> Détails du médicament
+  {{ medicaments.medNomcommercial }}</div>
+
+
+
+
+  <div class="Medicament">
+    <h3>Dépot légal: {{ medicaments.medDepotlegal }} </h3>
+        <div class="border">
+        <h3> Effets: </h3>
+            {{ medicaments.medEffets }}
+        <h3> Composition: </h3>
+            {{ medicaments.medComposition }}
+        </div>
+
+        <div class="border">
+        <h3> Contre indications: </h3>
+            {{ medicaments.medContreindic }}
+        </div>
+
+        <div class="border">
+        <h3> Quantité: </h3>
+            {{ medicaments.medQuantite }}
+        <h3> Prix: </h3>
+            {{ medicaments.medPrix }} €
+        </div>
+  </div>
+  <a href ="{{ path("suppmedoc", {depotlegal: medicaments.medDepotlegal}) }}" class="btn btn default">
+Supprimer le médicament
+</a>
+{% endblock %}

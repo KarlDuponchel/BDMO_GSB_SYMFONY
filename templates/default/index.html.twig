@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 
+
 {% block title %}Liste des médicaments{% endblock %}
 
 {% block body %}
@@ -9,11 +10,14 @@
   <div class="TitreContenu">
     <p class="Titre">Liste des médicaments</p>
   </div>
+
     {% for medicament in medicaments %}
     <br>
     <br>
     <div class="Medicament">
+      <a href= "{{ path("detailsmedoc", {depotlegal: medicament.medDepotlegal}) }}" style="text-decoration:none;">
         <button class="BtnMedoc">
+
             <div class="MedicamentGauche"><br>
             {{ medicament.medNomcommercial }}
             </div>
@@ -21,7 +25,7 @@
                 <br/>
                 <!--<u><b>Dépot légal</b></u> :--> {{ medicament.medDepotlegal }} / <!--<u><b>Composition</b></u> : -->{{ medicament.medComposition }} /<!-- <u><b>Quantité</b></u> :--> {{ medicament.medQuantite }}
             </div>
-        </button>
+        </button></a>
     </div>
 
     {% endfor %}
