@@ -1,0 +1,68 @@
+
+{% block body %}
+
+	<div class="well">
+	{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+ 
+	{# Les erreurs générales du formulaire. #}
+	{{ form_errors(form) }}
+ 
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medDepotlegal, 'Dépôt légal Médicament :') }}
+		{{ form_widget(form.medDepotlegal) }}
+		{{ form_errors(form.medDepotlegal) }}		
+	</div>
+		</br>
+ 
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.famCode, 'Famille Médicament :') }}
+		{{ form_widget(form.famCode) }}
+		{{ form_errors(form.famCode) }}	
+	</div>
+		</br>
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medNomcommercial, 'Nom Médicament :') }}
+		{{ form_widget(form.medNomcommercial) }}
+		{{ form_errors(form.medNomcommercial) }}
+	</div>
+		</br>
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medEffets, 'Effet Médicament :') }}
+		{{ form_widget(form.medEffets) }}
+		{{ form_errors(form.medEffets) }}
+	</div>
+		</br>
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medPrix, 'Prix Médicament :') }}
+		{{ form_widget(form.medPrix) }}
+		{{ form_errors(form.medPrix) }}
+	</div>
+		</br>
+		
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medComposition, 'Composition Médicament :') }}
+		{{ form_widget(form.medComposition) }}
+		{{ form_errors(form.medComposition) }}
+	</div>
+		</br>
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medContreindic, 'Contre indication Médicament :') }}
+		{{ form_widget(form.medContreindic) }}
+		{{ form_errors(form.medContreindic) }}
+	</div>
+		</br>
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.medQuantite, 'Quantité Médicament :') }}
+		{{ form_widget(form.medQuantite) }}
+		{{ form_errors(form.medQuantite) }}
+	</div>
+		</br>
+	
+	<button type="submit">Valider</button>
+	{{ form_end(form) }}
+
+
+
+{% endblock %}
+
+

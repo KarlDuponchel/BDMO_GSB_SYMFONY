@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+Ajout d'un Médicament
+{% endblock %}
+
+{% block body %}
+<h3>Ajouter un Médicament</h3>
+
+{{ include("ajoutMedicament.html.twig")}}	
+
+<p>
+   Vous allez ajouter un médicament.
+</p>
+
+<p>
+	</br>
+   <a href="{{ path ('index') }}" class="btn btn-default"> 
+   <i class ="glyphicon glyphicon-chevron-left"></i>
+   Retour à l'accueil
+   </a>
+  </p>
+
+{% endblock %}

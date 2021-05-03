@@ -5,3 +5,19 @@ deconnexion:
 index:
     path: /index
     controller: App\Controller\DefaultController::index
+
+SiteGSB_ajouterExcipient:
+    path:    /ajouterExcipient
+    defaults: { _controller: App\Controller\DefaultController::ajoutExicpient } 
+    
+SiteGSB_ajouterMedicament:
+    path:    /ajouteMedicament
+    defaults: { _controller: App\Controller\DefaultController::ajoutMedicament } 
+
+SiteGSB_ModifMedicament:
+    path:    /ModifierMedicament/{depotlegal}
+    defaults: { _controller: App\Controller\DefaultController::modifMedicament } 
+
+detailsmedoc:
+    path: /detailsmedoc/{depotlegal}
+    defaults: { _controller: App\Controller\DefaultController::detailsmedoc }

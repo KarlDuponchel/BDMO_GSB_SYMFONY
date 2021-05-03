@@ -17,7 +17,11 @@
       </style>
         <div class="GrandBandeauHaut">
           <div class="BandeauImg">
+<<<<<<< Updated upstream
             <img src="img/gsb.png">
+=======
+			<img src="img/gsb.png">
+>>>>>>> Stashed changes
           </div>
           <div class="TitreBandeauHaut">
             <p class="LblBienvenue"> Bienvenue Mr XXXXXXX
@@ -26,7 +30,11 @@
         </div>
         <div class="Conteneur">
             <div class="Gauche">
-
+				<p><b>Gestion des Médicaments:</b></p>
+				<li><a href="{{ path('index') }}">Retour à l'accueil</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterMedicament') }}">Ajouter un médicament</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterExcipient') }}">Ajouter un exipient</a></li>
+				
             </div>
             <div class="Droite">
               {% block body %}

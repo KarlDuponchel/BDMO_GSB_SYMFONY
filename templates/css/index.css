@@ -57,3 +57,31 @@
     margin-top: 5px;
     margin-left: 15px;
 }
+/** CSS page détails médicament **/
+.blocdetails{
+    cursor: pointer;
+    position: relative;
+    padding: 0 0 0 20px;
+    font: 400 20px/24px Roboto;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: transparent linear-gradient(180deg , #1A76DD 0%, #3CB9EF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+}
+.border{
+  border: 3px solid #D0D1D4;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+}
+.titredetailsmedoc{
+
+}
+.textedetailsmedoc
+
+}
