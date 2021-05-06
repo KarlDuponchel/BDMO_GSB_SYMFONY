@@ -1,0 +1,23 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+Modifier Medicament - {{parent()}}
+{% endblock %}
+
+{% block body %}
+<h2>Modifier un Médicament</h2>
+
+{{ include("ajoutMedicament.html.twig")}}	
+
+<p>
+   Vous allez modifier un médicament déjà existant.
+</p>
+
+<p>
+   <a href="{{ path ('detailsmedoc', {'depotlegal': medicament.medDepotlegal}) }}" class="btn btn-default">
+   <i class ="glyphicon glyphicon-chevron-left"></i>
+   Retour au détail
+   </a>
+  </p>
+
+{% endblock %}

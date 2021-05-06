@@ -1,0 +1,44 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Ajout famille médicament {% endblock %}
+
+{% block body %}
+
+	<h3>Ajouter une famille de médicament </h3>
+	
+	<div class="well">
+	{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+ 
+	{# Les erreurs générales du formulaire. #}
+	{{ form_errors(form) }}
+ 
+ 
+		<div class="input-field col s12 m6 l6">
+		{{ form_label(form.famCode, 'Famille Médicament :') }}
+		{{ form_widget(form.famCode) }}
+		{{ form_errors(form.famCode) }}	
+		</div>
+		</br>
+	
+	<div class="input-field col s12 m6 l6">
+		{{ form_label(form.famNom, 'Nom Famille Médicament :') }}
+		{{ form_widget(form.famNom) }}
+		{{ form_errors(form.famNom) }}
+	</div>
+	
+	</br>
+	<button type="submit">Valider</button>
+	{{ form_end(form) }}
+
+
+
+<p>
+	</br>
+   <a href="{{ path ('index') }}" class="btn btn-default"> 
+   <i class ="glyphicon glyphicon-chevron-left"></i>
+   Retour à l'accueil
+   </a>
+  </p>
+
+
+{% endblock %}

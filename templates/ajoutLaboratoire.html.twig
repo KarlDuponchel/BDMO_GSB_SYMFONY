@@ -1,0 +1,39 @@
+{% extends "base.html.twig" %}
+
+{% block title %} Ajout d'un laboratoire {% endblock %}
+
+{% block body %}
+
+	<h3>Ajouter un laboratoire</h3>
+	
+	<div class="well">
+	{{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+ 
+	{# Les erreurs générales du formulaire. #}
+	{{ form_errors(form) }}
+ 
+ 
+	
+	
+<div class="input-field col s12 m6 l6">
+		{{ form_label(form.labLibelle, 'Nom Laboratoire :') }}
+		{{ form_widget(form.labLibelle, {'attr': {'placeholder': 'Nom Laboratoire'}}) }}
+		{{ form_errors(form.labLibelle) }}
+	</div>
+	
+	</br>
+	<button type="submit">Valider</button>
+	{{ form_end(form) }}
+
+
+
+<p>
+	</br>
+   <a href="{{ path ('index') }}" class="btn btn-default"> 
+   <i class ="glyphicon glyphicon-chevron-left"></i>
+   Retour à l'accueil
+   </a>
+  </p>
+
+
+{% endblock %}

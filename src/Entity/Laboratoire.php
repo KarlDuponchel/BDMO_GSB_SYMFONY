@@ -28,27 +28,36 @@ class Laboratoire
      */
     private $labLibelle;
 
-    /**
-     * @var \Doctrine\Common\Collections\Collection
-     *
-     * @ORM\ManyToMany(targetEntity="Utilisateur", inversedBy="lab")
-     * @ORM\JoinTable(name="associer",
-     *   joinColumns={
-     *     @ORM\JoinColumn(name="LAB_ID", referencedColumnName="LAB_ID")
-     *   },
-     *   inverseJoinColumns={
-     *     @ORM\JoinColumn(name="UTI_ID", referencedColumnName="UTI_ID")
-     *   }
-     * )
+    
+	
+	/**
+     * @return integer
      */
-    private $uti;
-
-    /**
-     * Constructor
-     */
-    public function __construct()
+    public function getLabId(): ?integer
     {
-        $this->uti = new \Doctrine\Common\Collections\ArrayCollection();
+        return $this->labId;
+    }
+	
+	/**
+     * @return string
+     */
+    public function getlabLibelle(): ?string
+    {
+        return $this->labLibelle;
+    }
+	
+	/**
+     * 
+     *
+     * @param string $labLibelle
+     *
+     * @return Laboratoire
+     */
+    public function setlabLibelle($labLibelle)
+    {
+        $this->labLibelle = $labLibelle;
+
+        return $this;
     }
 
 }

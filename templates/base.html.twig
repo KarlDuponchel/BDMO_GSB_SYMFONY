@@ -17,7 +17,7 @@
       </style>
         <div class="GrandBandeauHaut">
           <div class="BandeauImg">
-            <img src="C:\wamp64\www\BDMO_GSB_SYMFONY\public\img\gsb.png" alt="logo">
+			<img src="img/gsb.png">
           </div>
           <div class="TitreBandeauHaut">
             <p class="LblBienvenue"> Bienvenue Mr XXXXXXX
@@ -26,7 +26,13 @@
         </div>
         <div class="Conteneur">
             <div class="Gauche">
-
+				<p><b>Gestion des Médicaments:</b></p>
+				<li><a href="{{ path('index') }}">Retour à l'accueil</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterMedicament') }}">Ajouter un médicament</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterExcipient') }}">Ajouter un excipient</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterLaboratoire') }}">Ajouter un laboratoire</a></li></br>
+				<li><a href="{{ path('SiteGSB_ajouterFamilleMedicament') }}">Ajouter famille médicament</a></li>
+				
             </div>
             <div class="Droite">
               {% block body %}
